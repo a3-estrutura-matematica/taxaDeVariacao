@@ -3,12 +3,11 @@ import java.util.Scanner;
 import java.lang.Math;
 
 public class TaxadeVariacao {
-
-    public static double calcularDerivadaT(double n) {
+    public static double derivadaT(double n) {
         return (15 * Math.pow(n, 2)) + (2 * n) - 6;
     }
 
-    public static double calcularDerivadaP(double n) {
+    public static double derivadaP(double n) {
         return (3 * Math.pow(n, 2)) - (10 * n) + 20;
     }
 
@@ -73,7 +72,7 @@ public class TaxadeVariacao {
         double n_squared = Math.pow(n, 2);
         double termo_n_quadrado = 15 * n_squared;
         double termo_n = 2 * n;
-        double taxaInstantanea = calcularDerivadaT(n);
+        double taxaInstantanea = derivadaT(n);
 
         System.out.println("1. Substituição: T'(" + n + ") = 15 * (" + n + ")² + 2 * (" + n + ") - 6");
         System.out.println("2. Produtos: T'(" + n + ") = " + termo_n_quadrado + " + " + termo_n + " - 6");
@@ -81,6 +80,7 @@ public class TaxadeVariacao {
 
         System.out.println("\n === RESPOSTA QUESTÃO 1:=== A taxa de variação instantânea do Tempo de Execução para n = " + n + " é: " + taxaInstantanea);
     }
+
 
     public static void executarQuestaoFitoplancton(Scanner scanner) {
         System.out.println("\n === 2. Cálculo da Taxa de Variação da População de Fitoplâncton ====");
@@ -101,7 +101,7 @@ public class TaxadeVariacao {
         double n_squared = Math.pow(n, 2);
         double termo_n_quadrado = 3 * n_squared;
         double termo_n = 10 * n;
-        double taxaInstantanea = calcularDerivadaP(n);
+        double taxaInstantanea = derivadaP(n);
 
         System.out.println("1. Substituição: P'(" + n + ") = 3 * (" + n + ")² - 10 * (" + n + ") + 20");
         System.out.println("2. Produtos: P'(" + n + ") = " + termo_n_quadrado + " - " + termo_n + " + 20");
