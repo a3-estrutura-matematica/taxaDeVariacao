@@ -214,7 +214,7 @@ class TelaSolucao extends JFrame {
                 + "Solução da Questão 2"
                 +"</div>"
                 +"<div style='text-align:center;'>"
-                + "Função: &nbsp; <b>P'(n) = 3n² - 10n + 20</b><br><br>"
+                + "Função: &nbsp; <b>P(n) = n³ - 5n² + 20n + 200</b><br><br>"
                 + "Derivada: &nbsp; <b>P'(n) = 3n² - 10n + 20</b><br><br>"
                 + "1. Substituição: P'(" + n + ") = 3 * (" + n + ")² - 10 * (" + n + ") + 20<br><br>"
                 + "2. Produtos: P'(" + n + ") = " + termo_n_quadrado + " - " + termo_n + " + 20<br><br>"
